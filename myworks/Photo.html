@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="photo.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-logo">Cactus Photo</div>
+
+    </header>
+    <div class="photo">
+        <h2>Landscape</h2>
+        <div class="content">
+            <div>Sakura</div>
+            <div style="display: flex; flex-direction: column; gap: 5px;">
+                <div class="imgcontainer">
+                    <img src="../images/sakura1.jpg" alt="" class="img"/>
+                    <div class="imginfo">
+                        sony a7
+                    </div>
+                </div>
+                <img src="../images/sakura2.jpg" alt="" />
+            </div>
+        </div>
+
+        <h2>Motorcycle</h2>
+
+        <div class="content">
+            <div>KTM Duke390</div>
+            <img src="../images/Duke390.jpg" alt="">
+        </div>
+        <div class="content">
+            <div>Harley Davidson XL1200cx</div>
+            <img src="../images/cx.jpg" alt="">
+        </div>
+        <div class="content">
+            <div>KTM 1290 SuperDukeR</div>
+            <img src="../images/sdr.jpg" alt="">
+        </div>
+        <div class="content">
+            <div>KTM 1290 SuperDukeR Blue.ver</div>
+            <img src="../images/blue.jpg" alt="">
+        </div>
+
+        <h2>Car</h2>
+
+        <div class="content">
+            <div>MAZDA NB Roadster 1.8RS</div>
+            <img src="../images/nb.jpg" alt="">
+        </div>
+
+        <h2>Animals</h2>
+
+        <div class="content">
+            <div>Dog</div>
+            <img src="../images/Dog.jpg" alt="">
+            <img src="../images/Dogs.jpg" alt="">
+        </div>
+    </div>
+    <script>
+        $(".imgcontainer").hover(function(){
+            $(".imginfo").fadeToggle()
+        })
+    </script>
+</body>
+</html>
