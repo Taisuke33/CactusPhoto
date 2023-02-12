@@ -193,6 +193,7 @@ for armor in armors:
 
 print('--------------------')
 
+#選択したエージェントは1試合の中では変更できないので1マッチ目のみ選択画面を表示
 selected_agent = None
 
 for match in range(0, match_count):
@@ -208,7 +209,7 @@ for match in range(0, match_count):
     skill_selected = False
 
     purchased_skills = {}
-
+    #スキルの個数に制限があるためpurchased_skillをオブジェクト化
     while not skill_selected:
         print(selected_agent.name + "のスキル一覧")
         index = 1
@@ -233,7 +234,6 @@ for match in range(0, match_count):
                     #%sはstr、 %iはint ""の外に%intなどの値をつけた見やすくできる
                 else:
                     purchased_skills[selected_skill["name"]]["qty"] += 1
-                    # purchased_skills[selected_skill["name"]]["price"] += selected_skill["price"]
             else:
                 purchased_skills[selected_skill["name"]] = {
                     "name": selected_skill["name"],
@@ -245,7 +245,7 @@ for match in range(0, match_count):
     total_skill_price = 0
     for item in purchased_skills.values():
         total_skill_price += item["price"] * item["qty"]
-        #オブジェクト{}のループは値の場合.values()で可能
+        #オブジェクト{}のループは値の場合.values()で抽出可能
         #strの場合keys()でループすることができる
         #参照：https://note.nkmk.me/python-dict-keys-values-items/
 
@@ -261,5 +261,3 @@ for match in range(0, match_count):
     result = selected_sidearm.price + selected_mainweapon.price + selected_armor.price + total_skill_price
 
     print('必要クレジットは' + str(result) + 'です。')
-
-#

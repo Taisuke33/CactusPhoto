@@ -19,58 +19,50 @@ header {
 .header-logo {
     font-size: 36px;
     padding: 10px 40px;
-    
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .photo {
     padding-top: 65px;
     list-style: none;
-    /* display: inline-block; */
-    /* text-align: center; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* .photo img {
-    border-radius: 5px ;
-    height: 350px;
-} */
-
 .content img {
-    position: relative;
-    border-radius: 5px ;
     height: 350px;
 }
 
-.content p {
+/* .content p {
     position: absolute;
     width: 100%;
     height: 350px;
     color: white;
     top: 0;
-}
+} */
 
-.content p:hover {
+/* .content p:hover {
     opacity: 1;
     transition:all 0.6s ease;
-}
+} */
 
 .imginfo {
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
     color: white;
     display: none;
-}
-
-.imginfo:hover {
-    opacity: 1;
-    transition:all 0.6s ease;
+    text-align: center;
 }
 
 .imgcontainer {

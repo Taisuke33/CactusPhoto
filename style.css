@@ -16,15 +16,17 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    /* z-index: 10; */
+    z-index: 10;
 }
 
 .header-logo {
     font-size: 36px;
-    padding: 10px 40px;
-    
+    padding: 10px 40px; 
 }
 
+a {
+    text-decoration: none;
+}
   
 body{
     background:#f3f3f3;
@@ -32,8 +34,8 @@ body{
 }
   
   
-a{
-    color: #333;
+header a{
+    color: white;
     text-decoration: none;
 }
   
@@ -55,13 +57,12 @@ a{
     background-repeat: no-repeat;
     color: white;
     text-align: center;
-    
 }
 
 
 .title {
     font-size: 45px;
-    color: red;
+    color: grey;
 }
 
 .menu {
